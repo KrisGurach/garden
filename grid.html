@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="портфолио Кристины Гураченковой на Яндекс.Практикуме">
+  <meta name="keywords" content="html, css, javascript">
+  <meta name="author" content="Кристина Гураченкова">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="vendor/normalize.css">
+  <link rel="stylesheet" href="pages/styles.css">
+  <title>Ужин в ресторане</title>
+</head>
+
+<body>
+<div class="page">
+  <section class="form">
+    <div class="form__toggle">
+        <img class="form__toggle-image" src="images/close_icon.png">
+    </div>
+    <div class="form__container">
+      <form class="form__admin">
+          <div class="form__main-container">
+            <fieldset class="form__input-container form__input-container_name">
+              <h2 class="title-form">Ваши данные</h2>
+              <label for="name" class="form__name">Имя</label>
+                <input type="text" class="form__item form__item_name" id="name" name="name" placeholder="Иван">
+              <label for="lastname" class="form__lastname">Отчество</label>
+                <input type="text" class="form__item form__item_lastname" id="lastname" name="lastname" placeholder="Иванович">
+              <label for="surname" class="form__surname">Фамилия</label>
+                <input type="text" class="form__item form__item_surname" id="surname" name="surname" placeholder="Иванов">
+              <label for="email" class="form__label">E-mail</label>
+                <input type="email" class="form__item form__item_email" id="email" name="email" placeholder="hello@example.com">
+            </fieldset>
+
+            <fieldset class="form__input-container form__input-container_reservation">
+              <h2 class="title-form">Бронирование</h2>
+              <label for="reservation-date" class="form__label">Дата бронирования</label>
+                <input type="date" class="form__item form__item_resrvation-date" id="reservation-date" name="reservation-date">
+              <h3 class="subtitle-form">Выберите количество человек</h3>
+              <label for="how-many" class="form__label form__label_how-many">
+                <input type="radio" name="number-of-peple" id="people" class="form__item form__item_el_number-of-people" value="people" checked>
+                  <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
+                  <span class="form__label-text">1</span>
+              </label>
+              <label for="how-many" class="form__label form__label_how-many">
+                <input type="radio" name="number-of-peple" id="people" class="form__item form__item_el_number-of-people" value="people" checked>
+                  <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
+                  <span class="form__label-text">2</span>
+              </label>
+              <label for="how-many" class="form__label form__label_how-many">
+                <input type="radio" name="number-of-peple" id="people" class="form__item form__item_el_number-of-people" value="people" checked>
+                  <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
+                  <span class="form__label-text">3</span>
+              </label>
+             <label for="how-many" class="form__label form__label_how-many">
+                <input type="radio" name="number-of-peple" id="people" class="form__item form__item_el_number-of-people" value="people" checked>
+                  <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
+                  <span class="form__label-text">4</span>
+             </label>
+            <h3 class="subtitle-form">В завершение ужина</h3>
+              <label for="deserts" class="form__label form__label_deserts">
+                <input type="checkbox" name="extra-option" id="deserts" class="form__item form__item_el_extra-options" value="deserts">
+                <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
+                <span class="form__label-deserts">Десерт</span>
+              </label>
+              <label for="sparkling" class="form__label form__label_sparkling">
+                <input type="checkbox" name="extra-option" id="sparkling" class="form__item form__item_el_extra-options" value="sparkling" checked>
+                <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
+                <span class="form__sparkling">Бокал шампанского</span>
+              </label>
+            </div>
+            <fieldset class="form__handsendler">
+              <input type="submit" class="form__button">
+            </fieldset>
+      </form>
+    </div>
+  </section>
+
+  <section class="content">
+    <header class="header">
+      <div class="header__black">
+        <nav class="menu menu_right">
+            <a href="#food" class="menu__link">Меню</a>
+            <a href="#team" class="menu__link">Команда</a>
+            <a href="#wine" class="menu__link">Винная карта</a>
+            <a href="#contacts" class="menu__link">Контакты</a>
+          </nav>
+        <h1 class="header__title">Подарите себе и своим друзьям незабываемый вечер в ресторане Garden</h1>
+        <p class="header__main-text">У Вашего близкого человека день рождения? Или, может быть, Вы хотите устроить сюрприз для Вашей половинки
+          на день всех влюбленных? Мы предлагаем Вам уникальную возможность бронирования ресторана для праздника "под ключ".
+          С нас: приятная музыка, комплименты от шеф-повара и создание незабываемых впечатлений, от Вас - только прекрасное настроение.
+        </p>
+      </div>
+    </header>
+    <section class="food" id="food">
+      <h2 class="food__subtitle">Наше специальное меню</h2>
+      <div class="food__container">
+        <div class="food__cell">
+          <img src="images/meet.jpg" class="food__image">
+          <p class="food__description">Стейк идеальной medium-rare прожарки, маринованный в специальном составе от нашего шеф-повара.
+            Подается вместе с фермерским ржаным хлебом, стеблями спаржи и дижонской горчицей.
+          </p>
+        </div>
+        <div class="food__cell">
+          <img src="images/burger.jpg" class="food__image">
+          <p class="food__description">Бургер с сочной котлетой из цезарки и картошка-фри с соусом из пармезана.
+            Обновленная классика - что может быть идеальнее?
+          </p>
+        </div>
+        <div class="food__cell">
+          <img src="images/carbonara.jpg" class="food__image">
+          <p class="food__description">Карбонара - одна из самых часто изготавливаемых паст в мире. Мы разнообразили ее зажаренными до хруста
+            свиными ушками, базиликовым маслом и особым сортом пармезана, выдержанным в дубовых бочках около 6 месяцев.
+          </p>
+        </div>
+        <div class="food__cell">
+          <img src="images/somon.jpg" class="food__image">
+          <p class="food__description">Стейк из семги, зажаренный на гриле вместе с овощами и манго  и посыпанный сверху крошкой Грано Падана.
+          </p>
+        </div>
+        <div class="food__cell">
+          <img src="images/bowl.jpg" class="food__image">
+          <p class="food__description">Освежающий морским бризом боул с кускусом, тихоокеанским тунцом, бобами эдадами и битыми огурцами.
+          </p>
+        </div>
+        <div class="food__cell">
+          <img src="images/soup.jpg" class="food__image">
+          <p class="food__description">Тыквенный суп с острым кайенским перцем, фенхелем и стеблем сельдерея. Подается с чесночным багетом.
+          </p>
+        </div>
+        <div class="food__cell">
+          <img src="images/cheesecake_change.jpg" class="food__image">
+          <p class="food__description">Классический чизкейк с черничным конфи</p>
+        </div>
+        <div class="food__cell">
+          <img src="images/tartalette_change.jpg" class="food__image">
+          <p class="food__description">Песочное тесто по рецепту величайшего кодитера Франсуа Готти, нежный воздушный заварной крем и
+            пикантная кислинка красной смородины. Тарталетка никого не оставит равндушным.
+          </p>
+        </div>
+        <div class="food__cell">
+          <img src="images/pavlova_change.jpg" class="food__image">
+          <p class="food__description">Хрустящее безе с таящей во рту корочкой, украшенной миндальными лепестками, взбитый белковый крем и
+            желе из голубики - этот десерт покорит сердце даже самого привередливого гурмана.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="team" id="team">
+      <h2 class="team__subtitle">Наша команда</h2>
+      <div class="team__container">
+        <img src="images/chief.jpg" class="team__photo team__photo_chief">
+        <p class="team__about team__about_chief">Шеф-повар Арсений Дзвинкас при создании меню опирался на те продукты,
+            которые любит сам, рецепты и вкусы собраны со всего мира. В меню представлены средиземноморские и азиатские мотивы,
+            хлеб выпекается в дровяной печи.</p>
+        <img src="images/confectioner.jpg" class="team__photo team__photo_confectioner">
+        <p class="team__about team__about_confectioner">Кондитер Катерина Иванова разработала десерты на основе безглютеновой муки.
+        </p>
+        <img src="images/sommelier.jpg" class="team__photo team__photo_sommelier">
+        <p class="team__about team__about_sommelier">За винное сопровождение отвечает шеф-сомелье Михаил Рецман,
+          который собрал коллекцию классических этикеток Старого и Нового света от французского левобережного бордо и итальянского
+          Кьянти до новозеландского совильон блана и чилийского мальбека, а также вина нового направления от маленьких именитых хозяйств.</p>
+      </div>
+    </section>
+
+  </section>
+
+  <script src="grid.js"></script>
+</body>
+</html>
+
+<!--
+1. Сделать, чтобы изначально не было выбранных вариантов в форме, да и вообще отредачить форму
+2. Стилизовать меню id
+3. Добавить текст в нашу команду
+4. Сделать папки по БЭМ
+5. Сделать так чтобы основная страница сжималась вправо при открытии меню
+6. Почитать про слайдер фото как на сайте иль сюд
+-->
