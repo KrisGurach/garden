@@ -81,12 +81,13 @@
     <header class="header">
       <div class="header__black">
         <nav class="menu">
+            <a href="#main" class="menu__link"><img src="images/icon_home.png" class="menu__home" alt="начальная страница"></a>
             <a href="#food" class="menu__link">Меню</a>
             <a href="#team" class="menu__link">Команда</a>
             <a href="#interior" class="menu__link">Интерьер</a>
             <a href="#contacts" class="menu__link">Контакты</a>
           </nav>
-        <h1 class="header__title">Подарите себе и своим друзьям незабываемый вечер в ресторане Garden</h1>
+        <h1 class="header__title" id="main">Подарите себе и своим друзьям незабываемый вечер в ресторане Garden</h1>
         <p class="header__main-text">У Вашего близкого человека день рождения? Или, может быть, Вы хотите устроить сюрприз для Вашей половинки
           на день всех влюбленных? Мы предлагаем Вам уникальную возможность бронирования ресторана для праздника "под ключ".
           С нас: приятная музыка, комплименты от шеф-повара и создание незабываемых впечатлений, от Вас - только прекрасное настроение.
@@ -164,6 +165,7 @@
       </div>
     </section>
     <section class="interior" id="interior">
+      <h2 class="team__subtitle">Интерьер</h2>
       <img class="interior__slider" src="images/interior-slider-1.jpg" alt="винный бар">
       <img class="interior__slider" src="images/interior-slider-2.jpg" alt="барная стойка">
       <img class="interior__slider" src="images/interior-slider-3.jpg" alt="столики у окна">
@@ -171,9 +173,22 @@
       <img class="interior__slider" src="images/interior-slider-5.jpg" alt="свеча с дымом">
       <img class="interior__slider" src="images/interior-slider-6.jpg" alt="арка из цветов на входе">
     </section>
-
-    <footer class="footer">
-
+    <hr class="hr-line">
+    <footer class="footer" id="contacts">
+      <div class="footer__author">&copy; Кристина Гураченкова</div>
+      <div class="footer__social-media">
+        <a href="#" class="footer__link" target="_blank">
+          <img src="images/icon_instagram.png" class="footer__logotype" alt="Instagram">garden_moscow
+        </a>
+        <a href="#" class="footer__link" target="_blank">
+          <img src="images/icon_phone.png" class="footer__logotype" alt="Whatsapp">+ 7 (981) 345-34-35
+        </a>
+      </div>
+      <div class="footer__address">
+        <a href="#" class="footer__link" target="_blank">
+          <img src="images/icon_location.png" class="footer__logotype" alt="месторасположение">г.Москва, ул. Большая Никитская, д.35, корп.2
+        </a>
+      </div>
     </footer>
   </section>
 
@@ -183,8 +198,8 @@
 
 <!--
 1. Сделать, чтобы изначально не было выбранных вариантов в форме, да и вообще отредачить форму
-2. Сделать винную карту, футер
+2. Сделать футер
 3. Сделать папки по БЭМ
 4. Сделать так чтобы основная страница сжималась вправо при открытии меню
-5. Почитать про слайдер фото как на сайте иль сюд
+5. Почитать про слайдер фото c JS
 -->
