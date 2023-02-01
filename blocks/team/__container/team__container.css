@@ -1,0 +1,16 @@
+.team__container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, minmax(min-content, max-content));
+  gap: 50px;
+  grid-template-areas:
+  "about-chief about-chief photo-chief"
+  ".. .. photo-chief"
+  "photo-confectioner about-confectioner about-confectioner"
+  "photo-confectioner .. .."
+  "about-sommelier about-sommelier photo-sommelier"
+  ".. .. photo-sommelier"
+}

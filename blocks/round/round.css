@@ -1,0 +1,8 @@
+@keyframes round {
+  25% {opacity: 1}
+  40% {opacity: 0}
+}
+
+.round {
+  animation: round 28s infinite;
+}
