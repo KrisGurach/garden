@@ -1,3 +1,8 @@
+@keyframes round {
+  25% {opacity: 1}
+  40% {opacity: 0}
+  }
+
 .page {
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
@@ -94,7 +99,7 @@
 }
 
 .header {
-  height: 80vh;
+  height: 100vh;
   background-image: url(../images/interior.jpg);
   background-size: cover;
   background-position: center;
@@ -106,25 +111,27 @@
 }
 
 .menu {
-  margin: 0 50px 0;
+  margin: 0 auto 0;
   padding: 10px 0;
-  width: 60%;
-  height: 3vw;
+  min-width: 80%;
+  min-height: 8vh;
   background-color: rgba(0, 0, 0, .5);
   position: fixed;
+  left: 10%;
   z-index: 3;
   box-sizing: border-box;
-}
-
-.menu_right {
-  margin-right: 370px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .menu__link {
   margin: auto;
-  padding: 15px 25px 0px;
+  padding: 0 25px;
   color: ghostwhite;
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .header__title {
@@ -206,7 +213,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, minmax(min-content, max-content));
-  gap: 30px;
+  gap: 50px;
   grid-template-areas:
   "about-chief about-chief photo-chief"
   ".. .. photo-chief"
@@ -242,7 +249,7 @@
 }
 
 .team__about {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .team__about_chief {
@@ -256,3 +263,50 @@
 .team__about_sommelier {
   grid-area: about-sommelier;
 }
+
+.interior {
+  margin: 50px auto;
+  overflow: hidden;
+  position: relative;
+  max-width: 640px;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.interior__slider {
+  animation: round 28s infinite;
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+}
+
+.interior__slider:nth-child(1) {
+  animation-delay: 20s;
+}
+
+.interior__slider:nth-child(2) {
+  animation-delay: 16s;
+}
+
+.interior__slider:nth-child(3) {
+  animation-delay: 12s;
+}
+
+.interior__slider:nth-child(4) {
+  animation-delay: 8s;
+}
+
+.interior__slider:nth-child(5) {
+  animation-delay: 4s;
+}
+
+.interior__slider:nth-child(6) {
+  animation-delay: 0;
+}
+
+/*@media(min-width:0px) and (max-width:320px) {
+.container_slider_css{width:80%;height:190px}
+}
+@media(min-width:321px) and (max-width:480px) {
+.container_slider_css{width:80%;height:190px}
+}*/
