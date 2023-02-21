@@ -78,14 +78,19 @@
 
   <section class="content">
     <header class="header">
+      <nav class="menu">
+        <a href="#main" class="menu__link">
+          <svg class="menu__home" alt="начальная страница" ?xml version="1.0" encoding="utf-8"? width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.15" d="M4 10L12 3L20 10L20 20H15V16C15 15.2044 14.6839 14.4413 14.1213 13.8787C13.5587 13.3161 12.7957 13 12 13C11.2044 13 10.4413 13.3161 9.87868 13.8787C9.31607 14.4413 9 15.2043 9 16V20H4L4 10Z" fill="#000000"/>
+            <path d="M3.99999 10L12 3L20 10L20 20H15V16C15 15.2044 14.6839 14.4413 14.1213 13.8787C13.5587 13.3161 12.7956 13 12 13C11.2043 13 10.4413 13.3161 9.87868 13.8787C9.31607 14.4413 9 15.2043 9 16V20H4L3.99999 10Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <a href="#food" class="menu__link">Меню</a>
+        <a href="#team" class="menu__link">Команда</a>
+        <a href="#interior" class="menu__link">Интерьер</a>
+        <a href="#contacts" class="menu__link">Контакты</a>
+      </nav>
       <div class="header__black">
-        <nav class="menu">
-            <a href="#main" class="menu__link"><img src="images/icon_home.png" class="menu__home" alt="начальная страница"></a>
-            <a href="#food" class="menu__link">Меню</a>
-            <a href="#team" class="menu__link">Команда</a>
-            <a href="#interior" class="menu__link">Интерьер</a>
-            <a href="#contacts" class="menu__link">Контакты</a>
-          </nav>
         <h1 class="header__title" id="main">Подарите себе и своим друзьям незабываемый вечер в ресторане Garden</h1>
         <p class="header__main-text">У Вашего близкого человека день рождения? Или, может быть, Вы хотите устроить сюрприз для Вашей половинки
           на день всех влюбленных? Мы предлагаем Вам уникальную возможность бронирования ресторана для праздника "под ключ".
@@ -185,7 +190,7 @@
           <img src="images/icon_instagram.png" class="footer__logotype" alt="Instagram">garden_moscow
         </a>
         <a href="#" class="footer__link" target="_blank">
-          <img src="images/icon_phone.png" class="footer__logotype" alt="Whatsapp">+ 7 (981) 345-34-35
+          <img src="images/icon_phone.png" class="footer__logotype" alt="Whatsapp">+&nbsp;7&nbsp;(981)&nbsp;345-34-35
         </a>
       </div>
       <div class="footer__address">
@@ -200,8 +205,21 @@
 </html>
 
 <!--
+  Цель: вывод кода на хороший уровень
 1. Стилизовать форму и сделать, чтобы изначально не было выбранных вариантов
-2. Добавить всякие шрифты
-3. Сделать так чтобы основная страница сжималась вправо при открытии меню
-4. Почитать про слайдер фото c JS
+2. Сделать так чтобы основная страница сжималась вправо при открытии меню
+3. Почитать про слайдер фото c JS и библиотеки
+
+1. Добавить шрифты
+2. Добавить вендорные префиксы для свойств (font-smoothing+, text-size-adjust не нужен, transform, transition, placeholder)
+3. Поработать с марджинами и паддингами в процентах
+4. Поработать с градиентом
+5. Добавить медиа для мобилок
+6. Сжать изображения, тк долго грузятся (сайт)
+7. Сделать отдельный файл с цветами
+8. Обнулить все margin padding у блока и текста
+
+можно переделать учебные проекты, например, добавить темную и светлую тему prefers-color-scheme
+&nbsp;
+&#10;
 -->

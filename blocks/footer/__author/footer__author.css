@@ -1,4 +1,9 @@
 .footer__author {
   margin: 0 0 20px;
-  align-self: flex-end;
+}
+
+@media screen and (min-width: 320px) and (max-width: 868px) {
+  .footer__author {
+    font-size: 12px;
+  }
 }

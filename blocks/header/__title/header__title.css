@@ -1,6 +1,15 @@
 .header__title {
-  margin: auto;
-  padding-top: 200px;
+  margin: 0;
+  padding-bottom: 30px;
+  max-width: 720px;
   color: ghostwhite;
   text-align: center;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 4255px) {
+  .header__title {
+    font-size: 22px;
+    max-width: 300px;
+  }
 }

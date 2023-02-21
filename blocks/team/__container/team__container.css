@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, minmax(min-content, max-content));
-  gap: 50px;
+  gap: calc(5vw - 10*(100vw/1280));
   grid-template-areas:
   "about-chief about-chief photo-chief"
   ".. .. photo-chief"
